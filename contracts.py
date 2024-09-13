@@ -12,6 +12,8 @@ class ProdutoEnum(str, Enum):
 class Vendas(BaseModel):
     """
     Modelo de dados para as vendas.
+
+    Args:
         email (EmailStr): email do comprador
         data (datetime): data da compra
         valor (PositiveFloat): valor da compra
