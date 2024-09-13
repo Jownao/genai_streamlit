@@ -1,9 +1,24 @@
-site_name: My Docs
+site_name: Sistema CRM e Vendas XPTO
 
 theme:
   name: material
+  palette:
+    - scheme: default
+      primary: 'indigo'
+      accent: 'blue'
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - search
   - mkdocstrings:
       default_handler: python
+
+nav:
+  - Home: index.md
+  - Contratos:
+      - Vendas: contracts.md
+  - Banco de Dados:
+      - Salvar no PostgreSQL: database.md
+  - Guia do Desenvolvedor: dev_guide.md
