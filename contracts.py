@@ -1,5 +1,6 @@
 from datetime import datetime
 from typing import Tuple
+import pydantic
 from pydantic import BaseModel, EmailStr, PositiveFloat, PositiveInt
 from enum import Enum
 
