@@ -16,3 +16,4 @@ Sistema_CRM_Vendas_XPTO
 ├── database.py
 ├── mkdocs.yml
 └── requirements.txt
+```
