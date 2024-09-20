@@ -14,7 +14,7 @@ def local_css(file_name):
 
 def main():
     # Carregar o CSS externo
-    local_css("src\\assets\\styles.css")  # Certifique-se de que o caminho está correto
+    local_css("src/assets/styles.css")  # Certifique-se de que o caminho está correto
     
     # Criação das abas
     tab1, tab2 = st.tabs(["Sistema de Vendas", "Pergunte ao chatGPT"])
