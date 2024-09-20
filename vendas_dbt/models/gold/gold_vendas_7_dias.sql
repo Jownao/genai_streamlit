@@ -9,8 +9,6 @@ WITH vendas_7_dias AS (
         COUNT(*) AS total_vendas
     FROM 
         {{ ref('silver_vendas') }}
-    --WHERE 
-        --data >= CURRENT_DATE - INTERVAL '6 days' 
     GROUP BY 
         data, produto
 )

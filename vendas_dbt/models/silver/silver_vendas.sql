@@ -10,9 +10,8 @@ WITH cleaned_data AS (
     FROM 
         {{ ref('bronze_vendas') }}
     WHERE 
-        valor > 0 
+        valor > 1000 
         AND valor < 8000
-        --AND data <= CURRENT_DATE 'Minhas inserções não estão nesse intervalo de data'
 )
 
 SELECT * FROM cleaned_data

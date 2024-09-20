@@ -9,8 +9,6 @@ WITH vendas_7_dias_vendedor AS (
         COUNT(*) AS total_vendas
     FROM 
         {{ ref('silver_vendas') }}
-    --WHERE 
-    --  data >= CURRENT_DATE - INTERVAL '6 days' 'Minhas inserções não estão nesse intervalo de data'
     GROUP BY 
         email, DATE(data)
 )

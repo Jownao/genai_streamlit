@@ -17,32 +17,22 @@ def conectar_db():
 def carregar_dados_gold_vendas_por_produto():
     engine = conectar_db()
     query = """
-WITH vendas_7_dias AS (
-    SELECT 
-        DATE(data) AS data, 
-        produto, 
-        SUM(valor) AS total_valor, 
-        SUM(quantidade) AS total_quantidade, 
-        COUNT(*) AS total_vendas
-    FROM 
-        vendas
-    WHERE
-        valor > 1000 
-        AND valor < 8000
-    GROUP BY 
-        data, produto
-)
-
 SELECT 
-    data, 
+    DATE(data) AS data, 
     produto, 
-    total_valor, 
-    total_quantidade, 
-    total_vendas
+    SUM(valor) AS total_valor, 
+    SUM(quantidade) AS total_quantidade, 
+    COUNT(*) AS total_vendas
 FROM 
-    vendas_7_dias
+    vendas
+WHERE 
+    valor > 1000 
+    AND valor < 8000
+GROUP BY 
+    DATE(data), produto
 ORDER BY 
-    data ASC"""
+    data ASC;
+"""
     dados = pd.read_sql(query, engine)  
     return dados
 

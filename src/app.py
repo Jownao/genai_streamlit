@@ -51,6 +51,7 @@ def main():
             st.write("Erro ao carregar os dados")
 
         if st.button("Enviar pergunta"):
+            df_vendas['data'] = df_vendas['data'].astype(str)
             sales_data_json = df_vendas.to_json(orient='records')
             answer = ask_groq(question, sales_data_json)
             st.write(f"Resposta do Groq: {answer}")
