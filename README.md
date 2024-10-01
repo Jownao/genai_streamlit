@@ -1,5 +1,7 @@
 ﻿# Sistema de CRM e Vendas da XPTO
 
+O servidor free tier desse projeto já foi desativado, peço para que visualiza o video demonstrativo abaixo ou se quiser entre em contato diretamente comigo.
+
 O [**Sistema de CRM e Vendas da XPTO**](https://vendasgenai.streamlit.app/) é uma aplicação desenvolvida para gerenciar e validar vendas de forma simples e eficiente. A solução oferece um frontend interativo para inserção de dados de vendas e validação robusta, além de uma integração fluida com um banco de dados PostgreSQL. [Assista ao vídeo de demonstração](https://youtu.be/PZpsMNDrUII).
 
 O projeto também conta com a implementação do **Medalhão** utilizando DBT (Data Build Tool) para orquestrar e transformar os dados em diferentes camadas:
