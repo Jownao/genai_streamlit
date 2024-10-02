@@ -1,4 +1,7 @@
-﻿# Sistema de CRM e Vendas da XPTO
+﻿# Sistema de CRM e Vendas da XPTO   [![Documentation](https://img.shields.io/badge/Documentation-Available-green.svg)](https://jownao.github.io/genai_streamlit/)
+ 
+
+
 
 O servidor free tier desse projeto já foi desativado, peço para que visualiza o video demonstrativo abaixo ou se quiser entre em contato diretamente comigo.
 
